@@ -1,0 +1,64 @@
+/* regla CSS */
+
+input {
+    color:violet;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 30px;
+    background-color: red;
+
+}
+
+h1 {
+    background-color: green;
+    color: blue;
+    border: 2px solid black;
+    text-align: right;
+    background-image: url(../img/fondo.jpg);
+
+}
+img {
+    width: 100px;
+    border: 2px solid red;
+    padding: 10px;
+    background-image: url(../img/fondo.jpg);
+    box-shadow: -3px -5px grey;
+    border-radius: 90px;
+}
+a {
+    border: 5px solid black;
+    border-left: 6px solid red;
+    padding: 20px;
+    background-color: violet;
+    background-image: url(../img/fondo.jpg);
+    background-repeat: repeat-y;
+    background-position: 5% 0%;
+    /*border-top: 10px dashed blue;
+    border-right: 2px solid violet;*/
+}
+
+p {
+    background-image: url(../img/fondo.jpg);
+
+    color: violet; 
+    font-size: 18px; 
+    font-style:normal;  
+    /*font-variant:small-caps;*/
+    font-weight: lighter;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*text-decoration:line-through blue;*/
+    text-transform: capitalize;
+    
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-align: justify;
+    line-height: 1.3;
+    text-indent: 16px;
+    
+    border: 2px solid red;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: -3px -5px grey;
+}
+

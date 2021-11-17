@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+header {
+    height: 100px;
+    background-color: rgba(0, 255, 0, 0.3);
+}
+header figure {
+    border: 2px solid red;
+    height: 100%;
+    width: 10%;
+    float: left;
+}
+
+header figure img{
+    height: 100%;
+}
+
+header div#middle {
+    width: 65%;
+    background-color: khaki;
+    height: 100%;
+    float: left;
+  /*  text-align: center;*/
+}
+header div#middle h1 {
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;;
+    margin-bottom: 0px;
+    color:red;
+    background-color: rgba(0,0,255,.3);
+}
+
+header #middle nav {
+    width: 90%;
+    text-align: center;
+    background-color: rgba(255,0,0,.3);
+    margin: 0 auto;
+    padding: 10px;
+}
+.menup i {
+
+}
+header #middle nav a {
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 20px;
+    background-color:yellow;
+    transition: 2s all;
+}
+header #middle nav a:hover {
+    background-color: green;
+}
+header #middle nav a:hover i {
+    color: white;
+}
+header #middle nav a:hover span {
+    color: red;
+    font-size: 22px;
+}
+
+header #middle nav i {
+    font-size: 25px;
+    color: green;
+    /* transform: rotate(45deg);*/
+}
+header #middle nav span {
+    font-size: 20px;
+}
+
+header div#registro {
+    float:left;
+    width: 25%;
+    background-color: lawngreen;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+    height: 520px;
+    background-color: rgba(255, 0, 0, 0.3);
+}
+footer {
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.9);
+}

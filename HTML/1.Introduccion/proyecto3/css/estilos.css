@@ -1,0 +1,72 @@
+
+input {
+    color:violet;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 30px;
+    background-color: red;
+
+}
+
+h1 {
+    background-color: green;
+    color: blue;
+    border: 2px solid black;
+    text-align: right;
+    background-image: url(../img/fondo.jpg);
+
+}
+img {
+    width: 100px;
+    border: 2px solid red;
+    padding: 10px;
+    background-image: url(../img/fondo.jpg);
+    box-shadow: -3px -5px grey;
+    border-radius: 90px;
+}
+nav a {
+    border: 2px solid black;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: rgba(0,255,0,0.3);  
+}
+nav a:hover {
+    background-color: rgba(0,255,0,1);  
+}   
+p {
+  /*  background-image: url(../img/fondo.jpg);*/
+    background-color: red;
+
+    color: violet; 
+    font-size: 18px; 
+    font-style:normal;  
+    /*font-variant:small-caps;*/
+    font-weight: lighter;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*text-decoration:line-through blue;*/
+    text-transform: capitalize;
+    
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-align: justify;
+    line-height: 1.3;
+    text-indent: 16px;
+    
+    border: 2px solid red;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: -3px -5px grey;
+}
+
+article p {
+    background-color: green ;
+    background-image: none;
+}
+
+div p {
+    background-color: hotpink;
+    color: yellow;
+}
+

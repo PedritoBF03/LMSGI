@@ -1,0 +1,54 @@
+/*Página en general*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header*/
+header{
+    background-color: rgb(179, 179, 179);
+}
+
+
+header div#header_top #logo{
+    background-color: green;
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    float: left;
+}
+header div#header_top #logo #textologo{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 30px 30px auto 30px;
+}
+header div#header_top #logo i{
+    font-size: 60px;
+    margin: 30px 30px auto 30px;
+}
+
+header div#header_top #redessociales{
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    background-color: red;
+}
+header div#header_top #redessociales i{
+    font-size: 25px;
+    color: grey;
+}
+header div#header_top #redessociales nav{
+    width: 40%;
+    float: right;
+    margin: 30px 30px auto auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+header div#header_top #redessociales nav a{
+    display: flex;
+    flex-flow: row nowrap;
+    text-decoration: none;
+}
