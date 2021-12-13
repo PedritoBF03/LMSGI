@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="iniciosesion.css">
+</head>
+<body>
+    
+    <SCRIPT  language=JavaScript> 
+        function go(){
+        
+        if (document.form.password.value=='usuario' && document.form.login.value=='usuario'){ 
+                document.form.submit();
+            }
+        if (document.form.password.value=='pedro' && document.form.login.value=='pedro'){ 
+            document.form.submit();
+            }
+        if (document.form.password.value=='morgado' && document.form.login.value=='morgado'){ 
+            document.form.submit();
+            }
+            else{ 
+                 alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+            } 
+        } 
+        </SCRIPT> 
+            
+        <main>
+            <H1>INICIO DE SESION</H1>
+
+            <FORM name=form action="../terminosprivacidad/terminosprivacidad.html">
+            
+            <P>Usuario:    <INPUT type=text name=login> 
+            <P>Contraseña: <INPUT type=password name=password> 
+            <INPUT onclick=go() type=button value=Acceder>
+            
+            </FORM>
+
+            <div>
+                <a href="../terminosprivacidad/terminosprivacidad.html">Inicio de sesion sin cuenta</a>
+            </div>
+        </main>
+
+</body>
+</html>

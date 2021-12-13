@@ -1,47 +1,35 @@
-console.log ('Cargando app.js');
-const iva = 0.16;
+//carga dinamica de paginas
+function inicio(){
+    console.log("documento app cargado");
+    console.log(document);
+    const main = document.querySelector("main section");
 
-let pcoste = 2000;
+    //detectar click de raton
+    const servicios = document.querySelector("header nav a#servicios");
+    const formacion = document.querySelector("header nav a#formacion");
+    const trabajos = document.querySelector("header nav a#trabajos");
+    const contacto = document.querySelector("header nav a#contacto");
 
-const calcularPVP = (precio, impuesto) => {
-    console.log ('Precio de Coste = ', precio, ' €');
-    console.log ('iva = ', impuesto * 100, '%', '-->', precio*impuesto);
-    console.log ('PVP = ', precio * (1 + impuesto), ' €');
-    return precio * (1 + impuesto);
+    servicios.addEventListener("click", () => {
+        console.log(" has pinchado en servicios");
+        //leer los ficheros html
+        fetch("html/servicio.html")
+            .then(respuesta => {
+                return respuesta.text()
+            })
+            .then(respuestahtml => {
+                console.log (respuestahtml)
+                main.innerHTML = respuestahtml;
+            })
+    });
+    
+    formacion.addEventListener("click", () => {
+        console.log(" has pinchado en formacion");
+    });
+
+    trabajos.addEventListener("click", () => {
+        console.log(" has pinchado en trabajos");
+    });
+
+    //main.innerHTML = "<h1>Holiwi</h1>"
 }
-
-//llamadas a la función
-//let ptotal = calcularPVP(20, iva);
-
-function sumar1 (x,y){
-    // instruccion 1;
-    // instruccion 2;
-    //...
-    //instruccion n;
-    return ( x + y)
-}
-
-/*  solo cuando el cuerpo de la funcion tiene 1 sola instruccion
-const sumar2 = (x, y) => {
-    return x + y;
-}
-*/
-const sumar2 = (x, y) =>  x + y ;
-
-let suma = sumar2( 13, 6);
-console.log(suma);
-
-const cubo1 = ( x ) => {
-    return( x * x * x)
-}
-const cubo = (x) => x*x*x;
-console.log( cubo(5,) );
-
-const potencia = (b, e) => {
-    let res = 1;
-    for(i = 1; i <= e; i++){
-        res = res * b
-    }
-    return res;
-}
-console.log (potencia (3,3));

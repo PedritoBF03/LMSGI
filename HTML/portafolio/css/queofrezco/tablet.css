@@ -1,0 +1,15 @@
+/*Nav*/
+nav{
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+nav a{
+    width: 30%;
+    height: 35px;
+}
+
+/*Main*/
+main{
+    width: 70%;
+}
