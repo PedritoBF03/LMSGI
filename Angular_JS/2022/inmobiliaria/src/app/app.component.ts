@@ -32,7 +32,7 @@ export class AppComponent {
     // setInterval(() => {
     //   this.edad = this.edad + 1;
     // },1000 );
-    setInterval(this.contador),1000;
+    setInterval(this.contador ),1000;
   }
   //funciones / métodos de clase (nuevo, listar,...)
   public nuevo(){
