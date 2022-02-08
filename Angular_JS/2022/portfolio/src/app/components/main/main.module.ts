@@ -5,6 +5,7 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
 import { MainCuerpoComponent } from './main-cuerpo/main-cuerpo.component';
 import { MainAsideComponent } from './main-aside/main-aside.component';
 
+import { MainRoutingModule } from './main-routing.module';
 
 
 @NgModule({
@@ -14,11 +15,12 @@ import { MainAsideComponent } from './main-aside/main-aside.component';
     MainCuerpoComponent,
     MainAsideComponent
   ],
-  exports: [
-    MainComponent,
+  exports:[
+    MainComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MainRoutingModule
   ]
 })
 export class MainModule { }
