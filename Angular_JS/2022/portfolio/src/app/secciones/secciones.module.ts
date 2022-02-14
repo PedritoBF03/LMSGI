@@ -7,6 +7,9 @@ import { ServiciosComponent } from './servicios/servicios.component';
 import { FormacionComponent } from './formacion/formacion.component';
 import { TrabajosComponent } from './trabajos/trabajos.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { UbicacionComponent } from './ubicacion/ubicacion.component';
+import { MpagosComponent } from './mpagos/mpagos.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 @NgModule({
@@ -15,7 +18,10 @@ import { ContactoComponent } from './contacto/contacto.component';
     ServiciosComponent,
     FormacionComponent,
     TrabajosComponent,
-    ContactoComponent
+    ContactoComponent,
+    UbicacionComponent,
+    MpagosComponent,
+    BlogComponent
   ],
   imports: [
     CommonModule,

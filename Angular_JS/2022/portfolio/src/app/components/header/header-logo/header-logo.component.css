@@ -1,0 +1,8 @@
+header figure{
+    grid-area: log;
+    text-align: center;
+}
+header figure a{
+    text-decoration: none;
+    color: black;
+}

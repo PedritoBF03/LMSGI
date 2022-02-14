@@ -1,12 +1,18 @@
 header{
     display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
-    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: 3fr 10fr 2fr;
+    grid-template-rows: repeat(3,3fr);
     grid-template-areas: 
-        "log men usu"
+        "log . usu"
+        ". . ."
+        "rel men men"
     ;
-    border: black 2px solid;
-    height: 100px;
+    margin-bottom: 30px;
+}
+
+header div.rellenoheader{
+    grid-area: rel;
+    background-color:rgb(85, 95, 95);
 }
 
 header app-header-logo{
@@ -16,7 +22,7 @@ header app-header-logo{
 
 header app-header-menu{
     grid-area: men;
-    background-color: orange;
+    background-color: rgb(85, 95, 95);
 }
 
 header app-header-usuario{

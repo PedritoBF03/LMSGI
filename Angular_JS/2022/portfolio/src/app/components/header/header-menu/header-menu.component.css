@@ -1,16 +1,16 @@
-nav{
-    border: 1px solid black;
+nav#menuprincipal{
+    grid-area: men;
+    text-align: end;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    margin: 25px auto auto auto;
+    background-color:rgb(85, 95, 95);
+    height: 50px;
 }
 
-nav a{
-    border: 1px solid black;
-    padding: 10px;
+nav#menuprincipal a{
     text-decoration: none;
-    background-color: white;
-    color: black;
-    font-size: 25px;
+    color:aquamarine;
+    margin: auto;
+    font-size: 20px;
 }
