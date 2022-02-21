@@ -1,0 +1,14 @@
+main{
+    border: 1px solid black;
+    height: 600px;
+}
+
+main h2{
+    text-align: center;
+    color: rgb(194, 3, 3);
+}
+
+main figure video{
+    width: 200px;
+    margin-top: 20px;
+}

@@ -1,0 +1,35 @@
+main section{
+    text-align: center;
+    margin: 100px auto auto auto;
+    width: 60%;
+    border: 1px solid black; 
+    margin-top: 30px;
+    text-transform: uppercase;
+    background-color: rgb(175, 175, 175);
+    box-shadow: 5px 5px grey;
+    margin-bottom: 30px;
+}
+main section h1{
+    font-size: 50px;
+}
+main section h2{
+    font-size: 25px;
+}
+table{
+    margin: auto auto auto auto;
+    border-collapse: collapse;
+}
+table tr td label{
+    font-size: 20px;
+}
+td{
+    text-align: right;
+    border: 1px solid black;
+}
+input{
+    border: 0;
+    background-color: rgb(175, 175, 175);
+}
+
+
+

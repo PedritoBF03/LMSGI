@@ -17,7 +17,6 @@ header div.rellenoheader{
 
 header app-header-logo{
     grid-area: log;
-    background-color: aqua;
 }
 
 header app-header-menu{
@@ -27,5 +26,4 @@ header app-header-menu{
 
 header app-header-usuario{
     grid-area: usu;
-    background-color: pink;
 }
