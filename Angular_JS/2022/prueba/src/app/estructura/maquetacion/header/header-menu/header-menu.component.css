@@ -1,0 +1,12 @@
+main nav{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 65px auto auto auto;
+}
+
+main nav a{
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}

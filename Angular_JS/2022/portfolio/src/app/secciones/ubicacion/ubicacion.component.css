@@ -1,0 +1,14 @@
+main{
+    display: flex;
+    flex-flow: row nowrap ;
+    justify-content: center;
+    
+}
+main div{
+    border: 3px solid black;
+}
+main div iframe{
+    width: 1000px;
+    height: 550px;
+    
+}

@@ -1,0 +1,23 @@
+
+
+header {
+  display:grid;
+  height: 100px;
+  grid-template-columns: 1fr 9fr;
+  grid-template-areas:
+    "logo  menu  ";
+
+    
+
+}
+
+app-header-logo {
+  grid-area: logo;
+}
+app-header-menu {
+  grid-area: menu;
+}
+app-header-usuario {
+  grid-area: registro;
+}
+

@@ -1,0 +1,22 @@
+main{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+main div h1{
+    font-size: 50px;
+}
+main div p{
+    border-top: 1000px;
+    font-size: 25px;
+}
+
+main div figure{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+main div figure img{
+    width: 30%;
+}

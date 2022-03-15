@@ -1,0 +1,17 @@
+header{
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+        "log men"
+    ;
+    background-color: aqua;
+}
+
+header app-header-logo{
+    grid-area: log;
+}
+
+header app-header-menu{
+    grid-area: men;
+}
