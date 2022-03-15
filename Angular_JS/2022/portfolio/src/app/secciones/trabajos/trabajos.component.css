@@ -1,0 +1,27 @@
+section {
+  text-decoration: none;
+  color: black;
+}
+section div.contenedor {
+  border: 1px solid black;
+  width: 60%;
+  margin: auto auto 50px auto;
+  background-color: gainsboro;
+  padding: 10px;
+}
+section div.contenedor h1{
+  font-size: 30px;
+}
+section div.contenedor div.texto{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+section div.contenedor div.texto p{
+  margin-top: 30px;
+  font-size: 20px;
+}
+section div.contenedor div.texto figure img{
+  width: 225px;
+}
+

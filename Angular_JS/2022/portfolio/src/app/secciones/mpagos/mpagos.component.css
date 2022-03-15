@@ -3,6 +3,8 @@ main{
     text-align: center;
     margin: 30px auto 30px auto;
     height: auto;
+    border: 1px solid black;
+    background-color: gainsboro;
 }
 main aside{
     margin-top: 30px;
@@ -12,4 +14,3 @@ main aside{
 main aside div img{
     width: 100px;
 }
-    
