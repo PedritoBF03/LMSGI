@@ -1,0 +1,16 @@
+header{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: repeat(1,3fr);
+    grid-template-areas: 
+        "log men"
+    ;
+    margin-bottom: 30px;
+}
+
+app-header-logo{
+    grid-area: log;
+}
+app-header-menu{
+    grid-area: men;
+}

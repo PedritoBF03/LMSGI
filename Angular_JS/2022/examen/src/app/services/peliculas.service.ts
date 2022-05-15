@@ -22,7 +22,7 @@ export class PeliculasService {
 
   async getMovie(id: string): Promise<IPelicula>{
     const prefix = 'id=589';
-    const url = `${this.api}/${prefix}/${id}`;
+    const url = `${this.api}${prefix}/${id}`;
     console.log(url);
     return new Promise ( resolve => {
       this.http.get<IPelicula>(url, this.httpOptions)
@@ -34,8 +34,8 @@ export class PeliculasService {
 
   }
   async getPagina(pagina: number):Promise<IPeliculas>{
-    const prefix = 'discover/movie';
-    const url = `${this.api}/${prefix}`;
+    const prefix = 'results_range';
+    const url = `${this.api}${prefix}`;
     let params1 = new HttpParams()
                   .set("page", pagina)
     this.httpOptions.params = params1;
@@ -49,7 +49,7 @@ export class PeliculasService {
   }
   async getFilter(genero: string):Promise<IPeliculas>{ //filtro pot categoria
     const prefix = 'category_id=201';
-    const url = `${this.api}/${prefix}`;
+    const url = `${this.api}${prefix}`;
     let params1 = new HttpParams()
                   .set("with_genres", genero)
     this.httpOptions.params = params1;

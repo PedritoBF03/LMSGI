@@ -2,9 +2,8 @@
       <ul class="list-group">
         <li class="list-group-item" aria-current="true"
             *ngFor="let genero of generos.genres">
-            <a (click)="getFilter(genero.id)"> {{ genero.name }}/{{ genero.id }} </a>
+            <a (click)="getFilter(genero.category_id)"> {{ genero.name }}/{{ genero.category_id }} </a>
         </li>
-
       </ul>
       <div id="cuerpo">
         <nav aria-label="Page navigation example">
@@ -43,15 +42,12 @@
             <tbody>
               <tr *ngFor="let pelicula of peliculas.results">
                 <td>
-                  <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/{{pelicula.poster_path}}">
+                  <!-- <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/{{pelicula.poster_path}}"> -->
                 </td>
-                <td><a (click)="getMovie('523931')">{{ pelicula.id }}</a></td>
-                <td>{{ pelicula.original_language }}</td>
-                <td>{{ pelicula.original_title }}</td>
-                <td>{{ pelicula.popularity }}</td>
-                <td>{{ pelicula.adult }}</td>
-                <td> {{ pelicula.vote_average }}</td>
-                <td>{{ pelicula.genre_ids }}</td>
+                <td><a (click)="getMovie('')">{{ pelicula.id }}</a></td>
+                <td>{{ pelicula.id }}</td>
+                <td>{{ pelicula.title }}</td>
+                <td>{{ pelicula.author }}</td>
               </tr>
             </tbody>
           </table>

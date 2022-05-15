@@ -23,7 +23,7 @@ export interface IPeliculas{
 }
 
 export interface IGenero {
-  id: string;
+  category_id: string;
   name: string;
 }
 export interface IGeneros {
