@@ -1,4 +1,37 @@
-header{
-    background-color: black;
-    color: white;
+@media (min-width:0px) {
+  header figure img{
+    width: 20%;
+
+
+    display: none;
+  }
+
+  header p{
+    width: 90%;
+    text-align: center;
+    margin: auto auto 30px auto;
+
+
+    display: none;
+  }
 }
+
+
+@media (min-width:600px) {
+  header figure img{
+    width: 10%;
+
+
+    display:block;
+}
+
+header p{
+    width: 90%;
+    text-align: center;
+    margin: auto auto 30px auto;
+
+
+    display: block;
+  }
+}
+
