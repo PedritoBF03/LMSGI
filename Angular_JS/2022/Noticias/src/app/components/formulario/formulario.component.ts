@@ -22,6 +22,7 @@ export class FormularioComponent implements OnInit {
 ]
 
 paises: any[] = [
+  { value: 'se', nombre: 'Pais'},
   { value: 'us', nombre: 'Estados Unidos'},
   { value: 've', nombre: 'Venezuela'},
   { value: 'ar', nombre: 'Argentina'},
