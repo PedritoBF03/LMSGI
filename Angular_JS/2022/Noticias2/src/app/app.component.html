@@ -1,0 +1,6 @@
+<app-navbar [titulo]="'Las mejores noticias del mundo, enterate de todo'"></app-navbar>
+<div class="container">
+  <app-formulario (parametrosSeleccionados)="buscarNoticias($event)"></app-formulario>
+  <app-spinner *ngIf="loading"></app-spinner>                                                                 <!-- El app-spiner es un componente que he -->
+  <app-listado-noticias [listNoticias]="listNoticias"></app-listado-noticias>                 <!-- creado y son simbolos de espera mientras carga -->
+</div>                                                                                        <!-- el app-listado-noticias-->
