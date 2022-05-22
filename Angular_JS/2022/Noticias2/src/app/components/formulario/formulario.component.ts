@@ -7,9 +7,12 @@ import { Component,EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class FormularioComponent implements OnInit {
   @Output() parametrosSeleccionados = new EventEmitter<any>()
+  @Output() parametros2Seleccionados = new EventEmitter<any>()
 
   categoriaSeleccionada = 'general';
   paisSeleccionado = 'ar';
+  autorSeleccionado = 'associated-press';
+
 
   categorias: any[] = [
     { value: 'general', nombre: 'General'},
@@ -33,6 +36,14 @@ paises: any[] = [
   { value: 'gb', nombre: 'Reino Unido'},
 ]
 
+autores: any[] = [
+  { value: 'associated-press', nombre: 'Associated-press' },
+  { value: 'cnn', nombre: 'cnn' },
+  { value: 'politico', nombre: 'Politico' },
+  { value: 'al-jazeera-english', nombre: 'Cal-jazeera-english' },
+  { value: 'usa-today', nombre: 'Usa-today' },
+]
+
   constructor() { }
 
   ngOnInit(): void {
@@ -44,8 +55,18 @@ paises: any[] = [
       pais: this.paisSeleccionado
     }
 
+
     this.parametrosSeleccionados.emit(PARAMETROS)
 
+  }
+
+  buscarAutor (){
+    const PARAMETROS2 = {
+      autor: this.autorSeleccionado
+    }
+
+    this.parametros2Seleccionados.emit(PARAMETROS2)
+    //autor: this.autorSeleccionado
   }
 
 }

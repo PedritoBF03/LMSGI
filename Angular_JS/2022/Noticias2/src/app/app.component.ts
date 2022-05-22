@@ -11,6 +11,8 @@ export class AppComponent {
   listNoticias: any[] = [];
   loading = false;                //Esta variable hace referencia al Spinkit que es lo de la espera de carga
 
+  listAutores: any[] = [];
+
   constructor(private _noticiaService: NoticiaService){
 
   }
@@ -26,6 +28,19 @@ export class AppComponent {
       this.loading = false;                                             //Aqui ponemos el loading por si ubiese algun fallo que deje
     })                                                                  //de aparecer y de esta forma no se haga un bucle infinito
 
+  }
+
+  buscarAutor(parametros2: any){
+    console.log('bueeeenas');
+    console.log(parametros2);
+
+    this._noticiaService.getAutores(parametros2).subscribe(data => {
+      console.log(data);
+      this.listAutores = data.articles;
+    }, error => {
+      console.log(error);
+      this.loading = false;
+    })
   }
 
 }

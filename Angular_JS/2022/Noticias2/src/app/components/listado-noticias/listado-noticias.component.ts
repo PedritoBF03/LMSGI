@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ListadoNoticiasComponent implements OnInit {
   @Input() listNoticias: any;
+  @Input() listAutores: any;
 
   constructor() { }
 
