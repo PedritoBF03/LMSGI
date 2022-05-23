@@ -11,7 +11,7 @@ export class AppComponent {
   listNoticias: any[] = [];
   loading = false;                //Esta variable hace referencia al Spinkit que es lo de la espera de carga
 
-  listAutores: any[] = [];
+  listAutores: any[] = [];        //Aqui creamos el array donde se pasaran los autores
 
   constructor(private _noticiaService: NoticiaService){
 
@@ -30,11 +30,10 @@ export class AppComponent {
 
   }
 
-  buscarAutor(parametros2: any){
-    console.log('bueeeenas');
-    console.log(parametros2);
-
-    this._noticiaService.getAutores(parametros2).subscribe(data => {
+  buscarAutor(parametros2: any){                                        //Creamos la funcion donde recogeremos a los autores y le pasamos
+    this.loading = true;                                                //la constante parametros2 que en mi caso es la que he creado para
+    this._noticiaService.getAutores(parametros2).subscribe(data => {    //la parte del listado de autores
+      this.loading = false;
       console.log(data);
       this.listAutores = data.articles;
     }, error => {
