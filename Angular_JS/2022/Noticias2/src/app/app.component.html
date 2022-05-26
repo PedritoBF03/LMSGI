@@ -1,0 +1,12 @@
+<app-navbar [titulo]="'Las mejores noticias del mundo, enterate de todo'"></app-navbar>
+<div class="container">
+  <app-formulario (parametrosSeleccionados)="buscarNoticias($event)" or (parametros2Seleccionados)="buscarAutor($event)"></app-formulario>
+  <app-spinner *ngIf="loading"></app-spinner>                                                                 <!-- El app-spiner es un componente que he -->
+  <app-listado-noticias [listNoticias]="listNoticias" or [listAutores]="listAutores" ></app-listado-noticias>                                 <!-- creado y son simbolos de espera mientras carga -->
+</div>                                                                                                        <!-- el app-listado-noticias-->
+
+
+
+<!-- En este apartado vamos a llamar a nuestro html del listado y fomulario de forma que haciendo esto los hara funcionales para pasarle los datos a la consola
+y recoger la informacion de nuestra API, el or que se emplea en cada app es porque quiero que distinga si utilizo el formulario de buscar noticia y muestre una cosa o si
+he elegido el de autor y deseo que nos muestre el resultado de este formulario -->
