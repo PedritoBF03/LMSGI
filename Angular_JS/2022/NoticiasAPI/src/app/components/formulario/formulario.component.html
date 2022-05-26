@@ -5,12 +5,12 @@
       <form (ngSubmit)="buscarNoticia()">
         <div class="form-group">
           <select name="categoria" [(ngModel)]="categoriaSeleccionada" class="form-control form-control-lg">
-            <option [value]="categoria.value" *ngFor="let categoria of categorias">{{ categoria.nombre }}</option>
+            <option [value]="categoria" *ngFor="let categoria of categorias">{{ categoria }}</option>
           </select>
         </div>
         <div class="form-group">
           <select name="pais" [(ngModel)]="paisSeleccionado" class="form-control form-control-lg">
-            <option [value]="pais.value" *ngFor="let pais of paises">{{ pais.nombre }}</option>
+            <option [value]="pais" *ngFor="let pais of paises">{{ pais }}</option>
           </select>
         </div>
         <button type="submit" class="btn btn-primary btn-block btn-lg">Buscar</button>
@@ -32,7 +32,7 @@
       <form (ngSubmit)="buscarAutor()">
         <div class="form-group">
           <select name="autor" [(ngModel)]="autorSeleccionado" class="form-control form-control-lg">
-            <option [value]="autor.value" *ngFor="let autor of autores">{{ autor.nombre }}</option>
+            <option [value]="autor" *ngFor="let autor of autores">{{ autor }}</option>
           </select>
         </div>
         <button type="submit" class="btn btn-primary btn-block btn-lg">Buscar</button>
